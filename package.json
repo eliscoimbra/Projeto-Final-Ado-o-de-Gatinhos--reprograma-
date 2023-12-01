@@ -1,0 +1,16 @@
+{
+  "name": "projetofinal-reprograma",
+  "version": "1.0.0",
+  "description": "O Instituto Pet Brasil estima que 185 mil animais estão sob tutela de organizações não governamentais (ONGs) e grupo de protetores animais. Estes animais geralmente estão em situação de abandono ou de maus tratos. Estima-se também que 40% são consequências de abandonos",
+  "main": "index.js",
+  "scripts": {
+    "test:jest": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  }
+}
