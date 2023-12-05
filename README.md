@@ -6,4 +6,9 @@ O Instituto Pet Brasil estima que 185 mil animais estão sob tutela de organiza�
 
 ## Problema: 
 
-Hoje em dia no grupo são utilizados formulários não muito práticos. Para resolver este problema gostaria de fazer um projeto com classes 
+Todos os registros do Projeto Lar Temporário são utilizados de maneira analógicae em papel isso dificulta o armazenamento e organização dos dados. Visando a melhoria do ponto de vista de organização e armazenamento de informações. Criei um sistema de cadastro de gatinhos, adotantes e acompanhamento do histórico médico.
+
+
+## Técnicas Aplicadas no Projeto 
+1. Programação Orientada a Objetos 
+2. Testes Unitários utilizando a biblioteca Jest 
