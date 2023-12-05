@@ -1,16 +1,24 @@
 {
   "name": "projetofinal-reprograma",
+  "type": "commonjs",
   "version": "1.0.0",
   "description": "O Instituto Pet Brasil estima que 185 mil animais estão sob tutela de organizações não governamentais (ONGs) e grupo de protetores animais. Estes animais geralmente estão em situação de abandono ou de maus tratos. Estima-se também que 40% são consequências de abandonos",
   "main": "index.js",
   "scripts": {
-    "test:jest": "jest --coverage"
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliscoimbra/Projeto-Final-Ado-o-de-Gatinhos--reprograma-.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliscoimbra/Projeto-Final-Ado-o-de-Gatinhos--reprograma-/issues"
+  },
+  "homepage": "https://github.com/eliscoimbra/Projeto-Final-Ado-o-de-Gatinhos--reprograma-#readme",
   "devDependencies": {
-    "jest": "^29.7.0",
-    "supertest": "^6.3.3"
+    "jest": "^29.7.0"
   }
 }
