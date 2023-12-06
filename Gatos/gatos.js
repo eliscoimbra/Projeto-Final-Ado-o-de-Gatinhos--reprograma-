@@ -11,20 +11,20 @@ class Gato{
         this.gatosAdultos =[]
     }
 
-    get reservado(){
+    getReservado(){
         return this.#reservado
     }
 
-    set reservado(atualizacaoReservado){
+    setReservado(atualizacaoReservado){
         return this.#reservado = atualizacaoReservado
     }
 
     verificarSeEhAdulto(gato){
-        if((gato instanceof Gato) || gato.idade >12){
+        if((gato instanceof Gato) && (gato.idade >= 12)){
             this.gatosAdultos.push(gato.nome)
-            return`O gato é adulto`
+            return"O gato é adulto"
         }else{
-           return `O $ gato não é adulto`
+           return "O gato não é adulto"
         }
     }
  

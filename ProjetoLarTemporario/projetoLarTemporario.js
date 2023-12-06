@@ -5,6 +5,7 @@ class ProjetoLarTemporario{
         this.nomeDoProjeto = nomeDoProjeto
         this.listaGatos = []
         this.numeroDeGatos = 0
+        this.saldo = 0 
     }
     cadastrar(gato){
         if(gato instanceof Gato){
@@ -25,6 +26,11 @@ class ProjetoLarTemporario{
              this.listaGatos = this.listaGatos.filter(itemAtual => itemAtual != gato.nome)
              return this.listaGatos
      }}
+
+     doarParaOLarTemporario(valor){
+        this.saldo = this.saldo+ valor
+        return "Muito Obrigada pela doação"
+     }
 }
 
 const gato1 = new Gato("Tom", "09/01/2022", "macho", "siames")

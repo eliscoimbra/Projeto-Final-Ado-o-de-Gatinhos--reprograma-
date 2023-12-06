@@ -6,7 +6,10 @@ O Instituto Pet Brasil estima que 185 mil animais estão sob tutela de organiza�
 
 ## Problema: 
 
-Todos os registros do Projeto Lar Temporário são utilizados de maneira analógicae em papel isso dificulta o armazenamento e organização dos dados. Visando a melhoria do ponto de vista de organização e armazenamento de informações. Criei um sistema de cadastro de gatinhos, adotantes e acompanhamento do histórico médico.
+Todos os registros do Projeto Lar Temporário são utilizados de maneira analógicae em papel isso dificulta o armazenamento e organização dos dados. Visando a melhoria do ponto de vista de organização e armazenamento de informações. 
+
+##  Resolução do Problema
+ Como tentativa de resolução do problema Criei um sistema de cadastro de gatinhos, adotantes e acompanhamento do histórico médico.
 
 
 ## Técnicas Aplicadas no Projeto 
