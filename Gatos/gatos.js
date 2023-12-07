@@ -8,7 +8,6 @@ class Gato{
         this.#reservado = false;
         this.castrado = false;
         this.historicoMedico = [];
-        this.gatosAdultos =[]
     }
 
     getReservado(){
@@ -19,16 +18,7 @@ class Gato{
         return this.#reservado = atualizacaoReservado
     }
 
-    verificarSeEhAdulto(gato){
-        if(gato instanceof Gato){
-            if(gato.idadeEmMeses >= 12){
-                this.gatosAdultos.push(gato.nome)
-                return"O gato é adulto"
-            }else{
-                return "O gato não é adulto"
-            }
-        }
-    }
+  
 
     
  

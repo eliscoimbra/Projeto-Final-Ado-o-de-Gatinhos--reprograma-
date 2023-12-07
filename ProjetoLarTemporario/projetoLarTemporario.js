@@ -6,6 +6,8 @@ class ProjetoLarTemporario{
         this.listaGatos = []
         this.numeroDeGatos = 0
         this.saldo = 0 
+        this.gatosAdultos =[]
+    
     }
     cadastrar(gato){
         if(gato instanceof Gato){
@@ -31,12 +33,23 @@ class ProjetoLarTemporario{
         this.saldo = this.saldo + valor
         return "Muito Obrigada pela doação"
      }
+
+     verificarSeEhAdulto(gato){
+        if(gato instanceof Gato){
+            if(gato.idadeEmMeses >= 12){
+                this.gatosAdultos.push(gato.nome)
+                return"O gato é adulto"
+            }else{
+                return "O gato não é adulto"
+            }
+        }
+    }
 }
 
 // const gato1 = new Gato("Tom", "09/01/2022", "macho", "siames")
 // const gato2 = new Gato("Joey", "19/09/2019","macho", "rajado")
 // const gato3 = new Gato("Tangerina", "09/01/203", "femea", "amarela")
-// const projetoLarTemp1 = new ProjetoLarTemporario()
+// 
 // projetoLarTemp1.cadastrar(gato1)
 // projetoLarTemp1.cadastrar(gato2)
 // projetoLarTemp1.cadastrar(gato3)

@@ -23,3 +23,21 @@ test("Teste função deletar", ()=>{
     expect(projetoLarTemp1.deletarGatos(gato2)).toEqual(["Tom"])
 
 })
+
+test("Teste função verificar se é adulto", ()=>{
+    let gato = new Gato("Tom", 13, "macho", "siames")
+    let projetoLarTemp1 = new ProjetoLarTemporario()
+    expect(projetoLarTemp1.verificarSeEhAdulto(gato)).toEqual("O gato é adulto")
+})
+
+test("Teste para verificar que o gato não é adulto", ()=>{
+    let gato1 = new Gato("Tom", 6, "macho", "siames")
+    let projetoLarTemp1 = new ProjetoLarTemporario()
+    expect(projetoLarTemp1.verificarSeEhAdulto(gato1)).toBe("O gato não é adulto")
+})
+
+
+test("Teste da função receber doação", ()=>{
+    let projetoLarTemp1 = new ProjetoLarTemporario()
+    expect(projetoLarTemp1.receberDoacao(100)).toBe("Muito Obrigada pela doação")
+})
