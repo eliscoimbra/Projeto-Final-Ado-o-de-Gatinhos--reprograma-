@@ -28,7 +28,7 @@ class ProjetoLarTemporario{
      }}
 
      doarParaOLarTemporario(valor){
-        this.saldo = this.saldo+ valor
+        this.saldo = this.saldo + valor
         return "Muito Obrigada pela doação"
      }
 }

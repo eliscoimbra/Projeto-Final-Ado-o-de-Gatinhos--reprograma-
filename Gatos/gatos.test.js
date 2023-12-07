@@ -6,7 +6,8 @@ test("Teste função verificar se é adulto", ()=>{
 })
 
 test("Teste para verificar que o gato não é adulto", ()=>{
-    let gato1 = new Gato("Tom", "6", "macho", "siames")
+
+Gato("Tom", "6", "macho", "siames")
     expect(gato1.verificarSeEhAdulto(gato1)).toBe("O gato não é adulto")
 })
 
@@ -22,9 +23,4 @@ test("Teste para consultar se o  gatinho está reservado", ()=>{
 
 
 
-// test("Teste função é Adulto", ()=>{
-//     let gato1 = new Gato("Tom", "09/01/2022", "macho", "siames")
-//     let projetoLarTemp1 = new ProjetoLarTemporario()
-//     expect(projetoLarTemp1.cadastrar(gato1)).toBe('O gato foi cadastrado')
-// })
 
