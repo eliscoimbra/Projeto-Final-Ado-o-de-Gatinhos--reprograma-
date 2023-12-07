@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">90% </span>
+                <span class="strong">84.21% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>27/30</span>
+                <span class='fraction'>16/19</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">89.65% </span>
+                <span class="strong">83.33% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>26/29</span>
+                <span class='fraction'>15/18</span>
             </div>
         
             
@@ -114,29 +114,29 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -145,17 +145,17 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const Gato = require("./../Gatos/gatos")
 &nbsp;
@@ -186,23 +186,23 @@ class ProjetoLarTemporario{
              return this.listaGatos
      }}
 &nbsp;
-<span class="fstat-no" title="function not covered" >     do</span>arParaOLarTemporario(valor){
+<span class="fstat-no" title="function not covered" >     re</span>ceberDoacao(valor){
 <span class="cstat-no" title="statement not covered" >        this.saldo = this.saldo + valor</span>
 <span class="cstat-no" title="statement not covered" >        return "Muito Obrigada pela doação"</span>
      }
 }
 &nbsp;
-const gato1 = new Gato("Tom", "09/01/2022", "macho", "siames")
-const gato2 = new Gato("Joey", "19/09/2019","macho", "rajado")
-const gato3 = new Gato("Tangerina", "09/01/203", "femea", "amarela")
-const projetoLarTemp1 = new ProjetoLarTemporario()
-projetoLarTemp1.cadastrar(gato1)
-projetoLarTemp1.cadastrar(gato2)
-projetoLarTemp1.cadastrar(gato3)
-console.log(projetoLarTemp1.listaGatos)
-projetoLarTemp1.deletarGatos(gato3)
-console.log(projetoLarTemp1.listaGatos)
-console.log(gato1.verificarSeEhAdulto(gato1))
+// const gato1 = new Gato("Tom", "09/01/2022", "macho", "siames")
+// const gato2 = new Gato("Joey", "19/09/2019","macho", "rajado")
+// const gato3 = new Gato("Tangerina", "09/01/203", "femea", "amarela")
+// const projetoLarTemp1 = new ProjetoLarTemporario()
+// projetoLarTemp1.cadastrar(gato1)
+// projetoLarTemp1.cadastrar(gato2)
+// projetoLarTemp1.cadastrar(gato3)
+// console.log(projetoLarTemp1.listaGatos)
+// projetoLarTemp1.deletarGatos(gato3)
+// console.log(projetoLarTemp1.listaGatos)
+// console.log(gato1.verificarSeEhAdulto(gato1))
 &nbsp;
 module.exports = ProjetoLarTemporario;</pre></td></tr></table></pre>
 
@@ -211,7 +211,7 @@ module.exports = ProjetoLarTemporario;</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-12-06T22:47:56.503Z
+                at 2023-12-07T20:43:46.635Z
             </div>
         <script src="../prettify.js"></script>
         <script>

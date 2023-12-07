@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">62.5% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>12/12</span>
+                <span class='fraction'>5/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">33.33% </span>
+                <span class="strong">16.66% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/6</span>
+                <span class='fraction'>1/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">62.5% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>12/12</span>
+                <span class='fraction'>5/8</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -100,18 +100,7 @@
 <a name='L35'></a><a href='#L35'>35</a>
 <a name='L36'></a><a href='#L36'>36</a>
 <a name='L37'></a><a href='#L37'>37</a>
-<a name='L38'></a><a href='#L38'>38</a>
-<a name='L39'></a><a href='#L39'>39</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L38'></a><a href='#L38'>38</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -123,6 +112,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -134,10 +126,16 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const Gato = require('./../Gatos/gatos')
 class Veterinario{
@@ -146,15 +144,14 @@ class Veterinario{
         this.nomeDaClinica = nomeDaClinica
         this.procedimentos =[]
     }
-    
+&nbsp;
 <span class="fstat-no" title="function not covered" >    co</span>nsultaRotina(){
     
     }
-&nbsp;
-    consultaEmergencia(gato, data, procedimento, valor, pagamento){
-        <span class="missing-if-branch" title="else path not taken" >E</span>if(gato instanceof Gato){
-        this.procedimentos.push({gato:gato.name, data: data, procedimento:procedimento, valor: valor, pagamento:pagamento})
-        return this.procedimentos
+<span class="fstat-no" title="function not covered" >    co</span>nsultaEmergencia(gato, data, procedimento, valor, pagamento){
+<span class="cstat-no" title="statement not covered" >        if(gato instanceof Gato){</span>
+<span class="cstat-no" title="statement not covered" >        this.procedimentos.push({gato:gato.name, data: data, procedimento:procedimento, valor: valor, pagamento:pagamento})</span>
+<span class="cstat-no" title="statement not covered" >        return `O  foi a uma consulta de emergência com o ${this.nomeDoVeterinario} e possui o valor${pagamento}`</span>
     }
     }
 &nbsp;
@@ -172,10 +169,10 @@ class Veterinario{
     }
 }
 &nbsp;
-const veterinario1 = new Veterinario("Matheus", "Miau")
-let gato1 = new Gato("Tom", "6", "macho", "siames")
-console.log(veterinario1.consultaEmergencia(gato1, '10/09/2022',"internação", 90, 'sim'))
-console.log(veterinario1.procedimentos)
+// const veterinario1 = new Veterinario("Matheus", "Miau")
+// let gato1 = new Gato("Tom", "6", "macho", "siames")
+// console.log(veterinario1.consultaEmergencia(gato1, '10/09/2022',"internação", 90, 'sim'))
+// console.log(veterinario1.procedimentos)
 &nbsp;
 module.exports = Veterinario;</pre></td></tr></table></pre>
 
@@ -184,7 +181,7 @@ module.exports = Veterinario;</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-12-06T22:47:56.503Z
+                at 2023-12-07T18:30:14.333Z
             </div>
         <script src="../prettify.js"></script>
         <script>

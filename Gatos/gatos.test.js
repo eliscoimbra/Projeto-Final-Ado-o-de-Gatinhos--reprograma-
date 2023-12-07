@@ -1,13 +1,12 @@
 const Gato = require("./gatos")
 
 test("Teste função verificar se é adulto", ()=>{
-    let gato = new Gato("Tom", "13", "macho", "siames")
-    expect(gato.verificarSeEhAdulto()).toEqual("O gato é adulto")
+    let gato = new Gato("Tom", 13, "macho", "siames")
+    expect(gato.verificarSeEhAdulto(gato)).toEqual("O gato é adulto")
 })
 
 test("Teste para verificar que o gato não é adulto", ()=>{
-
-Gato("Tom", "6", "macho", "siames")
+    let gato1 = new Gato("Tom", 6, "macho", "siames")
     expect(gato1.verificarSeEhAdulto(gato1)).toBe("O gato não é adulto")
 })
 

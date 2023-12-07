@@ -27,22 +27,22 @@ class ProjetoLarTemporario{
              return this.listaGatos
      }}
 
-     doarParaOLarTemporario(valor){
+     receberDoacao(valor){
         this.saldo = this.saldo + valor
         return "Muito Obrigada pela doação"
      }
 }
 
-const gato1 = new Gato("Tom", "09/01/2022", "macho", "siames")
-const gato2 = new Gato("Joey", "19/09/2019","macho", "rajado")
-const gato3 = new Gato("Tangerina", "09/01/203", "femea", "amarela")
-const projetoLarTemp1 = new ProjetoLarTemporario()
-projetoLarTemp1.cadastrar(gato1)
-projetoLarTemp1.cadastrar(gato2)
-projetoLarTemp1.cadastrar(gato3)
-console.log(projetoLarTemp1.listaGatos)
-projetoLarTemp1.deletarGatos(gato3)
-console.log(projetoLarTemp1.listaGatos)
-console.log(gato1.verificarSeEhAdulto(gato1))
+// const gato1 = new Gato("Tom", "09/01/2022", "macho", "siames")
+// const gato2 = new Gato("Joey", "19/09/2019","macho", "rajado")
+// const gato3 = new Gato("Tangerina", "09/01/203", "femea", "amarela")
+// const projetoLarTemp1 = new ProjetoLarTemporario()
+// projetoLarTemp1.cadastrar(gato1)
+// projetoLarTemp1.cadastrar(gato2)
+// projetoLarTemp1.cadastrar(gato3)
+// console.log(projetoLarTemp1.listaGatos)
+// projetoLarTemp1.deletarGatos(gato3)
+// console.log(projetoLarTemp1.listaGatos)
+// console.log(gato1.verificarSeEhAdulto(gato1))
 
 module.exports = ProjetoLarTemporario;

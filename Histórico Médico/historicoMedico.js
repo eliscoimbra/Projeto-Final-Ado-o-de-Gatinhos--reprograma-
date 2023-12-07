@@ -30,9 +30,9 @@ class Veterinario{
     }
 }
 
-const veterinario1 = new Veterinario("Matheus", "Miau")
-let gato1 = new Gato("Tom", "6", "macho", "siames")
-console.log(veterinario1.consultaEmergencia(gato1, '10/09/2022',"internação", 90, 'sim'))
-console.log(veterinario1.procedimentos)
+// const veterinario1 = new Veterinario("Matheus", "Miau")
+// let gato1 = new Gato("Tom", "6", "macho", "siames")
+// console.log(veterinario1.consultaEmergencia(gato1, '10/09/2022',"internação", 90, 'sim'))
+// console.log(veterinario1.procedimentos)
 
 module.exports = Veterinario;

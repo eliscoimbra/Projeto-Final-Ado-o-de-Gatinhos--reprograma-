@@ -1,4 +1,4 @@
-const Gatos = require("./.gatos.js")
+const Gatos = require("./../Gatos/gatos")
 
 class FormularioAdocao{
     constructor(nomeDoAdotante, endereco, numeroParaContato) {
@@ -6,29 +6,34 @@ class FormularioAdocao{
         this.endereco = endereco;
         this.numeroParaContato = numeroParaContato
     }
+
     criacaoInDoor(opcao){
-        if(opcao= true){
-            return "Você conhece e concorda com o termo criação InDoor"
+        if(opcao == true){
+            return "Você conhece e concorda com a criação InDoor"
         }else{
-            return "Para a adoção ser realizada é necessário conhecer o termo e concordar com tal comportamento"
+            return "É necessário conhecer a criação In Door para a adoção"
+        }
+     
+    }
+        
+
+    verificacoesCasa(casaTelada,tipoDeMoradia){
+        if(tipoDeMoradia == 'casa'){   
+            if(casaTelada == true){
+                return `${this.nomeDoAdotante} você possui um dos requisitos básicos para a adoção`
+            }else{
+                return `${this.nomeDoAdotante} este requisito é mínimo para adoção`
+            }
         }
     }
 
-    verificacoesCasa(casaTelada,tipoDeMoradia){
-        if(tipoDeMoradia = casa){   
-            if(casaTelada = true){
-                return `${this.name} você possui um dos requisitos básicos para a adoção`
-            }else{
-                return `${this.name} este requisito é mínimo para adoção `
-        }
-    }}
     verificacoesApartamento(apartamentoTelado, tipoDeMoradia){
-        if(tipoDeMoradia= apartamento){
-            if(apartamentoTelado = true){
-                return `${this.name} você possui um dos requisitos básicos para a adoção`
+        if(tipoDeMoradia =='apartamento'){
+            if(apartamentoTelado == true){
+                return `${this.nomeDoAdotante} você possui um dos requisitos básicos para a adoção`
             }else{
-                return `${this.name} este requisito é mínimo para adoção `
-        } 
+                return `${this.nomeDoAdotante} este requisito é mínimo para adoção`
+            } 
         }
     }
     preferenciasDeAdocao(adulto, sexo){
@@ -38,3 +43,5 @@ class FormularioAdocao{
         
     }
 }
+
+module.exports = FormularioAdocao
