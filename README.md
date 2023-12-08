@@ -11,6 +11,9 @@ Todos os registros do Projeto Lar Temporário são utilizados de maneira analóg
 ##  Resolução do Problema
  Como tentativa de resolução do problema Criei um sistema de cadastro de gatinhos, adotantes e acompanhamento do histórico médico.
 
+## Diagrama das Classes
+<img src ="/Imagem/classes.png">
+
 
 ## Técnicas Aplicadas no Projeto 
 1. Programação Orientada a Objetos 
