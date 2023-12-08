@@ -7,7 +7,6 @@ class ProjetoLarTemporario{
         this.numeroDeGatos = 0
         this.saldo = 0 
         this.gatosAdultos =[]
-    
     }
     cadastrar(gato){
         if(gato instanceof Gato){
@@ -17,8 +16,7 @@ class ProjetoLarTemporario{
         }else{
             return "Não é possível cadastrar o gato"
         }
-     }
-
+    }
     deletarGatos(gato){
          if((!gato instanceof Gato)){
              return ("Gato não cadastrado")
@@ -27,7 +25,8 @@ class ProjetoLarTemporario{
             this.numeroDeGatos -=1
              this.listaGatos = this.listaGatos.filter(itemAtual => itemAtual != gato.nome)
              return this.listaGatos
-     }}
+         }
+    }
 
      receberDoacao(valor){
         this.saldo = this.saldo + valor

@@ -44,7 +44,7 @@ class HistoricoMedico extends Gato{
 
 }
 
-let gato = new HistoricoMedico("Tom", 13, 'macho')
-gato.vacina("V5", '10/12')
-console.log(gato.vacinas)
-module.exports = HistoricoMedico;
+// let gato = new HistoricoMedico("Tom", 13, 'macho')
+// gato.vacina("V5", '10/12')
+// console.log(gato.vacinas)
+ module.exports = HistoricoMedico;

@@ -1,7 +1,6 @@
 const ProjetoLarTemporario = require("./projetoLarTemporario")
 const Gato = require("./../Gatos/gatos")
 
-
 test("Teste função cadastrar onde objeto Gato e do tipo Gato", ()=>{
     let projetoLarTemp1 = new ProjetoLarTemporario("Lar Temporário São Carlos")
     let gato = new Gato("Tom", "13", "macho", "siames")
