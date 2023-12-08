@@ -1,11 +1,11 @@
 const Gato = require('./../Gatos/gatos')
-class Veterinario{
-    constructor(nomeDoVeterinario, nomeDaClinica){
-        this.nomeDoVeterinario = nomeDoVeterinario
-        this.nomeDaClinica = nomeDaClinica
+class HistoricoMedico extends Gato{
+    constructor(nome,idadeEmMeses, sexo){
+        super(nome,idadeEmMeses, sexo)
         this.procedimentos =[]
+        this.vacina =[]
+        this.castrado = false;
     }
-
     consultaRotina(){
     
     }
@@ -16,18 +16,32 @@ class Veterinario{
     }
     }
 
-    vacina(nomeDaVacina, data, valor){
-
-
+    vacina(nomeDaVacina, data){
+        if(gato instanceof Gato){
+            this.vacina.push(nomeDaVacina)
+            return`O ${this.nome} recebeu a ${nomeDaVacina}`
+        }else{
+            return
+        }
+    }
+    reforcoVacina(nomeDaVacina){
+        switch(nomeDaVacina){
+            case 'raiva':
+                return `Este é o reforço da vacina de ${nomeDaVacina} do gatinho de nome ${this.nome}`
+            case "V5":
+                return `Este é o reforço da vacina de ${nomeDaVacina} do gatinho de nome ${this.nome}`
+            case "V4":
+                return `Este é o reforço da vacina de ${nomeDaVacina} do gatinho de nome ${this.nome}`
+        }
     }
 
-    reforcoVacina(){
+    castragem(){
+        if(this.castrado == false){
+            return this.castrado = true
+    }}
 
-    }
-
-    castragem(nomeDoGato, sexo, valor){
-
-    }
+    
+    
 }
 
 // const veterinario1 = new Veterinario("Matheus", "Miau")
@@ -35,4 +49,4 @@ class Veterinario{
 // console.log(veterinario1.consultaEmergencia(gato1, '10/09/2022',"internação", 90, 'sim'))
 // console.log(veterinario1.procedimentos)
 
-module.exports = Veterinario;
+module.exports = HistoricoMedico;

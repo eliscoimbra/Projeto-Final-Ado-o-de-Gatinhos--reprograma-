@@ -7,7 +7,6 @@ class Gato{
         this.sexo = sexo
         this.#reservado = false;
         this.castrado = false;
-        this.historicoMedico = [];
     }
 
     getReservado(){

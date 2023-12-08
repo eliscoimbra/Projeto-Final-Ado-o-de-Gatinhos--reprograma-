@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1701988415839" clover="3.2.0">
-  <project timestamp="1701988415839" name="All files">
-    <metrics statements="54" coveredstatements="51" conditionals="20" coveredconditionals="14" methods="14" coveredmethods="13" elements="88" coveredelements="78" complexity="0" loc="54" ncloc="54" packages="3" files="3" classes="3"/>
+<coverage generated="1702043703478" clover="3.2.0">
+  <project timestamp="1702043703478" name="All files">
+    <metrics statements="73" coveredstatements="62" conditionals="29" coveredconditionals="18" methods="20" coveredmethods="16" elements="122" coveredelements="96" complexity="0" loc="73" ncloc="73" packages="4" files="4" classes="4"/>
     <package name="Formulário">
       <metrics statements="20" coveredstatements="18" conditionals="12" coveredconditionals="8" methods="5" coveredmethods="4"/>
       <file name="formularioDeAdocao.js" path="C:\Users\Inkapuff\ProjetoFinal-reprograma\Formulário\formularioDeAdocao.js">
@@ -25,23 +25,48 @@
         <line num="38" count="1" type="stmt"/>
         <line num="43" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="44" count="0" type="stmt"/>
-        <line num="57" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
       </file>
     </package>
     <package name="Gatos">
-      <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="gatos.js" path="C:\Users\Inkapuff\ProjetoFinal-reprograma\Gatos\gatos.js">
-        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="5" count="7" type="stmt"/>
-        <line num="6" count="7" type="stmt"/>
-        <line num="7" count="7" type="stmt"/>
-        <line num="8" count="7" type="stmt"/>
-        <line num="9" count="7" type="stmt"/>
-        <line num="10" count="7" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="32" count="3" type="stmt"/>
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="9" count="12" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="Histórico Médico">
+      <metrics statements="20" coveredstatements="12" conditionals="9" coveredconditionals="4" methods="6" coveredmethods="3"/>
+      <file name="historicoMedico.js" path="C:\Users\Inkapuff\ProjetoFinal-reprograma\Histórico Médico\historicoMedico.js">
+        <metrics statements="20" coveredstatements="12" conditionals="9" coveredconditionals="4" methods="6" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="28" count="3" type="cond" truecount="3" falsecount="0"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="39" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
       </file>
     </package>
     <package name="ProjetoLarTemporario">

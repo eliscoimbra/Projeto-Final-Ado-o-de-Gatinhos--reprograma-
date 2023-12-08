@@ -52,6 +52,4 @@ class FormularioAdocao extends ProjetoLarTemporario{
 //  gato.verificarSeEhAdulto(gato)
 // console.log(adotante.preferenciasDeAdocao(true))
 
-
-
 module.exports = FormularioAdocao
