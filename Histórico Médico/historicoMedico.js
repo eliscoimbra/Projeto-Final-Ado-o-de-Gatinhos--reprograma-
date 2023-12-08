@@ -2,28 +2,29 @@ const Gato = require('./../Gatos/gatos')
 class HistoricoMedico extends Gato{
     constructor(nome,idadeEmMeses, sexo){
         super(nome,idadeEmMeses, sexo)
-        this.procedimentos =[]
-        this.vacina =[]
+        this.historicoDeConsultas= []
+        this.vacinas =[]
         this.castrado = false;
     }
-    consultaRotina(){
+    consulta(dataDaConsulta, tipoDeConsulta, nomeDoVeterinario, procedimento, valor, pago){
+        this.historicoDeConsultas.push({
+            data:dataDaConsulta,
+            tipo: tipoDeConsulta,
+            nomeDoVeterinario: nomeDoVeterinario,
+            procedimento: procedimento, 
+            valor: valor,
+            pago: pago
+        }
+        )
+        return this.historicoDeConsultas
     
-    }
-    consultaEmergencia(gato, data, procedimento, valor, pagamento){
-        if(gato instanceof Gato){
-        this.procedimentos.push({gato:gato.name, data: data, procedimento:procedimento, valor: valor, pagamento:pagamento})
-        return `O  foi a uma consulta de emergência com o ${this.nomeDoVeterinario} e possui o valor${pagamento}`
-    }
     }
 
     vacina(nomeDaVacina, data){
-        if(gato instanceof Gato){
-            this.vacina.push(nomeDaVacina)
-            return`O ${this.nome} recebeu a ${nomeDaVacina}`
-        }else{
-            return
-        }
+        this.vacinas.push({vacina: nomeDaVacina, data:data})
+            return this.vacinas     
     }
+
     reforcoVacina(nomeDaVacina){
         switch(nomeDaVacina){
             case 'raiva':
@@ -40,13 +41,10 @@ class HistoricoMedico extends Gato{
             return this.castrado = true
     }}
 
-    
-    
+
 }
 
-// const veterinario1 = new Veterinario("Matheus", "Miau")
-// let gato1 = new Gato("Tom", "6", "macho", "siames")
-// console.log(veterinario1.consultaEmergencia(gato1, '10/09/2022',"internação", 90, 'sim'))
-// console.log(veterinario1.procedimentos)
-
+let gato = new HistoricoMedico("Tom", 13, 'macho')
+gato.vacina("V5", '10/12')
+console.log(gato.vacinas)
 module.exports = HistoricoMedico;
